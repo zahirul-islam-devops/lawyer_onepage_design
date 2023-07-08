@@ -1,0 +1,511 @@
+/* Google Fonts integration CSS link below */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+/* CSS starts from here */
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	text-rendering: optimizeLegibility;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Global CSS start */
+
+.title {
+	width: 100%;
+	padding: 0px 0px 20px;
+}
+
+.title h2 {
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.title h2::before {
+	content: "";
+	width: 70px;
+	height: 4px;
+	background: #f2622c;
+	display: block;
+	position: relative;
+	top: -15px;
+	left: 0px;
+	z-index: 2;
+}
+
+/* Global CSS end */
+
+
+/* header CSS start */
+
+.header {
+	width: 100%;
+	padding: 15px 0px;
+	background: #fff;
+	box-shadow: 0px 8px 28px 2px #3d3d3d15;
+}
+
+.header .fixed-top {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	background: #fff;
+	padding: 20px;
+}
+
+.header .navbar-nav .nav-item .nav-link {
+	font-size: 14px;
+	line-height: 1.5em;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #28377e;
+	margin: 0px 8px 0px;
+	letter-spacing: 1px;
+	transition: .4s;
+}
+
+/*.header .navbar-nav .nav-item .nav-link::after {
+	content: "";
+	width: 0px;
+	height: 2px;
+	background: #28377e;
+	position: absolute;
+	left: 1px;
+	bottom: -6px;
+	transition: width .6s;
+	display: block;
+}
+
+.header .navbar-nav .nav-item .nav-link:hover::after {
+	width: 100%;
+}
+*/
+
+.header .navbar-nav .nav-item .active {
+	color: #f2622c;
+}
+
+.header .navbar-nav .nav-item .nav-link:hover {
+	color: #f2622c;
+}
+
+.header .navbar-nav .nav-item .nav-link:focus {
+	color: #f2622c;
+}
+
+.header .navbar-nav .nav-item .active:hover {
+	color: #28377e;
+}
+
+/* header section end */
+
+
+/* slider section start */
+
+.slider {
+	width: 100%;
+	padding: 80px 0px;
+	background: url("../images/slider.png") center top no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.slider .inner-slider {
+	width: 100%;
+	padding: 90px 0px;
+}
+
+.inner-slider h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 80px;
+	line-height: 1.3em;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.inner-slider .arrow {
+	width: 100%;
+	padding: 180px 0px 0px;
+}
+
+.arrow .fa {
+	font-size: 35px;
+	color: #fff;
+}
+
+
+/* slider section end */
+
+
+/* who-we-are section start */
+
+.who-we-are {
+	width: 100%;
+	padding: 80px 0px;
+}
+
+.who-we-are .title {
+	padding: 60px 0px 0px;
+}
+
+.who-we-are .title h2 {
+	color: #28377e;
+	margin: 0px 0px 30px;
+}
+
+.who-we-are p {
+	font-size: 14px;
+	line-height: 1.7em;
+	color: #b0b0b1;
+}
+
+.who-we-are .inner-img {
+	width: 100%;
+	text-align: center;
+}
+
+/* who-we-are section end */
+
+
+/* what-we-do section start */
+
+.what-we-do {
+	width: 100%;
+	padding: 80px 0px;
+	background: url("../images/wwd.png") center top no-repeat;
+	background-size: cover;
+}
+
+.what-we-do .title {
+	padding: 0px 0px 40px;
+	text-align: center;
+}
+
+.what-we-do .title h2 {
+	font-size: 35px;
+	color: #28377e;
+}
+
+.what-we-do .title h2::before {
+	content: "";
+	position: relative;
+	top: -15px;
+	left: 47%;
+	z-index: 2;
+}
+
+.what-we-do .card {
+	border-radius: 0px;
+	text-align: center;
+}
+
+.what-we-do .card .card-img {
+	border-radius: 0px;
+}
+
+.what-we-do .card .card-title {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	font-size: 26px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.what-we-do .card .long-arro {
+	position: absolute;
+	bottom: 15%;
+	left: 0;
+	width: 100%;
+}
+
+
+/* what-we-do section end */
+
+
+/* our-attorneys section start */
+
+.our-attorneys {
+	width: 100%;
+	padding: 200px 0px;
+	background: url("../images/oat.png") center top no-repeat;
+	background-size: cover;
+}
+
+.our-attorneys .title {
+	padding: 120px 0px 0px;
+}
+
+.our-attorneys .title h2 {
+	color: #fff;
+}
+
+.our-attorneys .title h2::before {
+	content: "";
+	position: relative;
+	top: -25px;
+	left: 0px;
+	z-index: 2;
+}
+
+.our-attorneys p {
+	font-size: 14px;
+	line-height: 1.7em;
+	font-weight: 500;
+	color: #929dcf;
+	margin: 15px 0px 35px;
+}
+
+.our-attorneys .custom-link {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 600;
+	color: #f2622c;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: .4s;
+}
+
+.our-attorneys .custom-link:hover {
+	color: #fff;
+}
+
+.our-attorneys .card {
+	border-radius: 0px;
+	text-align: left;
+	margin: 0px 0px 25px;
+}
+
+.our-attorneys .card-img {
+	border-radius: 0px;
+}
+
+.our-attorneys .card .card-title {
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	width: 80%;
+	font-size: 26px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+/* our-attorneys section end */
+
+
+/* the-languages section start */
+
+.the-languages {
+	width: 100%;
+	padding: 80px 0px;
+}
+
+.the-languages .title {
+	padding: 0px 0px 40px;
+	text-align: center;
+}
+
+.the-languages .title h2 {
+	font-size: 35px;
+	color: #28377e;
+}
+
+.the-languages .title h2::before {
+	content: "";
+	position: relative;
+	top: -15px;
+	left: 47%;
+	z-index: 2;
+}
+
+.the-languages .lang-card {
+	width: 100%;
+	padding: 40px 20px;
+}
+
+.lang-card h3 {
+	font-size: 26px;
+	line-height: 1.2em;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #28377e;
+	margin: 0px 0px 20px;
+}
+
+.lang-card p {
+	color: #b0b0b1;
+	font-size: 14px;
+	line-height: 1.7em;
+	font-weight: 500;
+	margin: 0px 0px 20px;
+}
+
+.lang-card .custom-link {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+	color: #f2622c;
+	text-decoration: none;
+	transition: .4s;
+}
+
+.the-languages .custom-link:hover {
+	color: #28377e;
+}
+
+/* the-languages section end */
+
+
+/* contact-us section start */
+
+.contact-us {
+	width: 100%;
+	padding: 120px 0px;
+	background: linear-gradient(120deg, rgba(212,219,255,1) 9%, rgba(255,211,195,1) 71%);
+}
+
+.contact-us .title {
+	padding: 0px 0px 40px;
+	text-align: center;
+}
+
+.contact-us .title h2 {
+	color: #28377e;
+}
+
+.contact-us .title h2::before {
+	content: "";
+	position: relative;
+	top: -15px;
+	left: 47%;
+	z-index: 2;
+}
+
+.contact-us .contact-form {
+	width: 100%;
+	background-color: #212529;
+	padding: 40px 30px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form .form-control {
+	padding: 15px;
+	background: #212529;
+	border-radius: 2px;
+	border: none;
+	border-bottom: 1px solid #444348;
+	margin: 8px 0px;
+	letter-spacing: 1px;
+	color: #fff;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+.form-control::placeholder {
+	color: #fff;
+	padding-left: 0px;
+}
+
+.form-control:focus {
+	color: #fff;
+	background-color: transparent;
+	border-bottom: 1px solid #23b7a4;
+	box-shadow: 0 0 0 .10rem #23b7a4;
+}
+
+.contact-form .center-align {
+	text-align: center;
+}
+
+.contact-form .custom-link {
+	padding: 12px 60px;
+	margin: 20px 0px 0px;
+	background-color: #f2622e;
+	color: #fff;
+	border: 1px solid #f2622e;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	transition: .4s;
+}
+
+.contact-form .custom-link:hover {
+	background-color: #23b7a4;
+	color: #fff;
+	border: 1px solid #23b7a4;
+}
+
+
+/* contact-us section end */
+
+
+/* footer section start */
+
+.footer {
+	width: 100%;
+	padding: 20px 0px;
+	background: #0c1234;
+}
+
+.footer ul {
+	padding: 10px 0px 0px;
+}
+
+.footer ul li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+.footer ul li a {
+	display: block;
+	width: 38px;
+	height: auto;
+	padding: 4px 6px;
+	background: #0c1234;
+	color: #b1b7dd;
+	border-radius: 4px;
+	text-align: center;
+	margin: 0px 5px 0px 0px;
+	cursor: pointer;
+	transition: .4s;
+}
+
+.footer ul li a:hover {
+	background: #b1b7dd;
+	color: #0c1234;
+}
+
+.footer ul li a .fa {
+	font-size: 24px;
+}
+
+.footer p {
+	font-size: 14px;
+	font-weight: 500;
+	color: #b1b7dd;
+	padding: 15px 0px 0px;
+	letter-spacing: .5px;
+	text-align: right;
+}
+
+/* footer section end */
